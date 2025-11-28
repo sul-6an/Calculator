@@ -1,5 +1,5 @@
 # آلة حاسبة
-<p dir="rtl">XAML و C# مكتوبه باستخدام
+<p dir="rtl">مكتوبه باستخدام XAML و C# 
 
 <h2>شكل الواجهة</h2>
 <p align="center">
