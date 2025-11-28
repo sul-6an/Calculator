@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kalkulator.MainPage">
+
+    <ScrollView Background="Black">
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Grid RowDefinitions="*,*,*,*,*,*" ColumnDefinitions="*,*,*,*" ColumnSpacing="10" RowSpacing="10" WidthRequest="300" HeightRequest="450"  >
+
+                
+                <Label Text="0" x:Name="screenLabel" Grid.Row="0" Grid.ColumnSpan="4" HorizontalTextAlignment="End" VerticalTextAlignment="End" FontSize="50"/>
+
+                <Button Text="AC" Grid.Row="1" Grid.Column="0"  Pressed="Press" Released="Released" Clicked="OnClearClick" CornerRadius="100" BackgroundColor="#a5a5a5"/>
+                <Button Text="+/-" Grid.Row="1" Grid.Column="1" Pressed="Press" Released="Released" Clicked="OnNegClick" CornerRadius="100" BackgroundColor="#a5a5a5"/>
+                <Button Text="%" Grid.Row="1" Grid.Column="2" Pressed="Press" Released="Released" Clicked="OnPerClick" CornerRadius="100" BackgroundColor="#a5a5a5"/>
+                <Button Text="÷" Grid.Row="1" Grid.Column="3" Pressed="Press" Released="Released" TextColor="White"  CornerRadius="100" Clicked="OnOperatorClick" BackgroundColor="Orange"/>
+
+                <Button Text="7" Grid.Row="2" Grid.Column="0" TextColor="White" CornerRadius="100" Pressed="Press" Released="Released" Clicked="OnNumberClick" BackgroundColor="#333333"/>
+                <Button Text="8" Grid.Row="2" Grid.Column="1" TextColor="White" CornerRadius="100" Pressed="Press" Released="Released" Clicked="OnNumberClick" BackgroundColor="#333333"/>
+                <Button Text="9" Grid.Row="2" Grid.Column="2" TextColor="White" CornerRadius="100" Pressed="Press" Released="Released" Clicked="OnNumberClick" BackgroundColor="#333333"/>
+                <Button Text="x" Grid.Row="2" Grid.Column="3" TextColor="White" CornerRadius="100" Pressed="Press" Released="Released" Clicked="OnOperatorClick" BackgroundColor="Orange"/>
+
+                <Button Text="4" Grid.Row="3" Grid.Column="0" TextColor="White" CornerRadius="100" Pressed="Press" Released="Released" Clicked="OnNumberClick" BackgroundColor="#333333"/>
+                <Button Text="5" Grid.Row="3" Grid.Column="1" TextColor="White" CornerRadius="100" Pressed="Press" Released="Released" Clicked="OnNumberClick" BackgroundColor="#333333"/>
+                <Button Text="6" Grid.Row="3" Grid.Column="2" TextColor="White" CornerRadius="100" Pressed="Press" Released="Released" Clicked="OnNumberClick" BackgroundColor="#333333"/>
+                <Button Text="-" Grid.Row="3" Grid.Column="3" TextColor="White" CornerRadius="100" Pressed="Press" Released="Released" Clicked="OnOperatorClick" BackgroundColor="Orange"/>
+
+                <Button Text="1" Grid.Row="4" Grid.Column="0" TextColor="White" CornerRadius="100" Pressed="Press" Released="Released" Clicked="OnNumberClick" BackgroundColor="#333333"/>
+                <Button Text="2" Grid.Row="4" Grid.Column="1" TextColor="White" CornerRadius="100" Pressed="Press" Released="Released" Clicked="OnNumberClick" BackgroundColor="#333333"/>
+                <Button Text="3" Grid.Row="4" Grid.Column="2" TextColor="White" CornerRadius="100" Pressed="Press" Released="Released" Clicked="OnNumberClick" BackgroundColor="#333333"/>
+                <Button Text="+" Grid.Row="4" Grid.Column="3" TextColor="White" CornerRadius="100" Pressed="Press" Released="Released" Clicked="OnOperatorClick" BackgroundColor="Orange"/>
+
+                <Button Text="0" Grid.Row="5" Grid.Column="0" TextColor="White" CornerRadius="40" Pressed="Press" Released="Released"  Grid.ColumnSpan="2" Clicked="OnNumberClick" BackgroundColor="#333333"/>
+
+                <Button Text="." Grid.Row="5" Grid.Column="2" TextColor="White" CornerRadius="100" Pressed="Press" Released="Released" Clicked="OnNumberClick" BackgroundColor="#333333"/>
+                <Button Text="=" Grid.Row="5" Grid.Column="3" TextColor="White" CornerRadius="100" Pressed="Press" Released="Released" Clicked="OnEqualClick" BackgroundColor="Orange"/>
+
+
+
+
+
+
+
+            </Grid>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>
